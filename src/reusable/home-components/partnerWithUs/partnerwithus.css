@@ -1,0 +1,92 @@
+/* partner echo section css start*/
+
+.partner-echo {
+    padding: 50px 0px;
+    background-image: url('../../../assets/images/home/partnerwithus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.partner-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.partner-section {
+    padding: 0px 40px;
+}
+
+.echo-section {
+    padding: 0px 40px;
+}
+
+ul.partner-ul li {
+    flex: 0 0 49%;
+}
+
+.partner-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+.partner-section div:first-child {
+    flex: 0 0 30%;
+}
+
+.partner-section div:nth-child(2) {
+    flex: 0 0 65%;
+}
+
+.echo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 50px;
+}
+
+.echo-section div:first-child {
+    flex: 0 0 30%;
+}
+
+.echo-section div:nth-child(2) {
+    flex: 0 0 65%;
+}
+
+.text-explore-btn h3 {
+    color: #383737;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.text-explore-btn p {
+    color: #232323;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 20px 0px;
+    font-weight: 400;
+}
+
+
+/* partner echo section css end*/
+
+@media (max-width:576px) {
+    ul.partner-ul {
+        flex-direction: column;
+    }
+    .partner-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:991px) {
+    ul.partner-ul {
+        flex-direction: column;
+    }
+}

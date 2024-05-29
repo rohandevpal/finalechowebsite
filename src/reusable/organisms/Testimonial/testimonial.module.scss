@@ -1,0 +1,82 @@
+/*
+FIXME: fix this whole file
+*/
+
+.testimonialContainer {
+  padding: 40px 80px 20px 80px;
+  background-color: #F8F8F1;
+
+}
+
+.testimonialTitle {
+  margin-bottom: 0;
+}
+
+.testimonialSubtitle {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.carouselItem {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.carouselContent {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carouselInnerContent {
+  display: flex;
+  flex-flow: wrap;
+  height: 57%;
+  background-color: #FFFFFF;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 65%;
+  box-shadow: 5px 5px 30px #24040A29;
+}
+
+.carouselHeader {
+  display: flex;
+}
+
+.carouselHeaderSection {
+  margin-left: 20px;
+}
+
+.carouselImage {
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  margin-left: 40px;
+  height: auto;
+  transition: all 0.5s ease;
+  width: 30%;
+  object-fit: cover;
+}
+
+.carouselBody {
+  line-height: 1.6;
+  color: #707070;
+  margin: 0 40px;
+}
+
+.carouselTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  margin: 72px 0px 5px 0px;
+  color: #707070;
+}
+
+.carouselSubtitle {
+  font-weight: normal;
+  color: #707070;
+  margin: 0;
+}

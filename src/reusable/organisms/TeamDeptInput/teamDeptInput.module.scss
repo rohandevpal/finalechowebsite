@@ -1,0 +1,62 @@
+@import "../../../styles/variables";
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  margin-bottom: 1.5rem;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+.tagLabel {
+  color: $color-text;
+
+  font-size: 0.75rem;
+
+  padding: 0.5rem 1rem;
+  border: 1px solid $color-text;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.tagInput {
+  display: none;
+  &:checked + .tagLabel {
+    background-color: $color-primary;
+    color: $color-text-inverted;
+    border: 1px solid $color-primary;
+  }
+}
+
+.dropdownContainer {
+  display: none;
+}
+
+.dropdown {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: lighten($color-primary, 57);
+  color: $color-text;
+}
+
+@include respond(touch) {
+  .tags {
+    display: none;
+  }
+
+  .tagDescription {
+    display: none;
+  }
+
+  .dropdownContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+}
+
+.icon {
+  height: 4.6875rem;
+  width: 4.6875rem;
+
+  margin-right: 1.25rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@include respond(mobile) {
+  .container {
+    flex-direction: column;
+
+    flex: 0 0 75%;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-bottom: 1.25rem;
+  }
+}

@@ -1,0 +1,130 @@
+/* footer CSS start*/
+
+section.footer {
+    border-top: 5px solid #A71E22;
+    padding: 50px 0px;
+}
+
+ul.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+ul.footer-main li h3 {
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+ul.footer-main li h1 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #333333;
+    line-height: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+ul.footer-main li:first-child {
+    flex: 0 0 25%;
+}
+
+ul.footer-main li ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #193946;
+    font-family: var(--font-raleway);
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #F1F1F1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.newsletter .inputEmail input {
+    border: none;
+    background: #f1f1f1;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.connect div {
+    flex: 0 0 18%;
+}
+
+.connect div img {
+    width: 50%;
+}
+
+.footer-container {
+    padding: 0px 40px;
+}
+
+ul.footer-main ul {
+    padding: 0px;
+}
+
+
+/* footer CSS end*/
+
+@media (max-width:547px) {
+    ul.footer-main {
+        display: inline;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0px;
+    }
+    ul.footer-main>li {
+        margin: 10px 0px;
+        text-align: center;
+    }
+    ul.footer-main>li ul h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:786px) {
+    ul.footer-main {
+        justify-content: space-between;
+        text-align: center;
+    }
+    ul.footer-main li {
+        flex: 0 0 45%;
+    }
+    ul.footer-main>li {
+        margin: 20px 0px;
+    }
+    ul.footer-main li h1 {
+        text-align: center;
+    }
+    ul.footer-main li:first-child {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width:991px) {
+    ul.footer-main>li {
+        flex: 0 0 46%;
+        padding-bottom: 20px;
+        font-size: 25px;
+    }
+}

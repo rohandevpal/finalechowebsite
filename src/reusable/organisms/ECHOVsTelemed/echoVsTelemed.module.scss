@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  flex: 1;
+  img {
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+.content {
+  flex: 1;
+}
+
+.heading {
+  margin: 0;
+}
+
+@include respond(mobile) {
+  .container {
+    flex-direction: column-reverse;
+  }
+}

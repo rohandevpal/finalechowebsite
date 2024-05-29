@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.background {
+  background-color: #f8f8f1;
+}
+
+.container {
+  padding: 4.375rem 3.375rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  margin: 0;
+}
+
+.description {
+  flex: 1;
+  padding-right: 5.625rem;
+}
+
+.highlight {
+  font-style: normal;
+  text-decoration: underline;
+  color: $color-primary;
+}
+
+.video {
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  iframe {
+    height: 16.25rem;
+    width: 100%;
+
+    margin: auto;
+  }
+}
+
+@include respond(mobile) {
+  .container {
+    flex-direction: column;
+  }
+
+  .description {
+    padding-right: 0;
+  }
+}

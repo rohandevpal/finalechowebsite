@@ -1,0 +1,31 @@
+@import "../../../styles/variables";
+
+.button {
+  padding: 0.9375rem 4.6875rem;
+  font-size: 1rem;
+
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: $color-bg-primary;
+  color: $color-primary;
+  border: 0.0625rem solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-text-inverted;
+  }
+}
+
+.secondary {
+  border: 0.0625rem solid $color-primary;
+  background-color: $color-primary;
+  color: $color-text-inverted;
+
+  &:hover {
+    border: 0.0625rem solid darken($color-primary, 10);
+    background-color: darken($color-primary, 10);
+  }
+}

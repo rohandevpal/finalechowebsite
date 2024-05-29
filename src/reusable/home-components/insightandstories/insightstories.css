@@ -1,0 +1,102 @@
+/* insights and stories css start*/
+
+
+
+section.Insights-and-Stories {
+  padding: 50px 0px;
+}
+ul.story-cards {
+  padding: 0;
+}
+.main-story-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: auto;
+}
+
+.main-story-box p {
+  font-size: 14px;
+  line-height: 22px;
+  word-spacing: 0px;
+  padding: 20px 0px;
+  color: #404040;
+}
+
+.main-story-box .span {
+  font-family: var(--font-raleway);
+  font-size: 17px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  color: #101828;
+}
+
+.main-story-box h3 {
+  padding: 20px 0px;
+  margin: 0;
+  font-size: 27px;
+  font-weight: 600;
+}
+
+.main-story-box img {
+  width: 100%;
+}
+
+ul.story-cards li {
+  flex: 0 0 31%;
+}
+
+ul.story-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+
+.insights-heading {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  color: var(--brand-color);
+  font-size: 42px;
+  overflow: hidden;
+}
+
+.insights-heading:before,
+.insights-heading:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid #000;
+}
+
+.insights-heading:after {
+  margin: 0 -55% 0 0.5em;
+}
+
+/* insights and stories css end*/
+
+@media (max-width: 768px) {
+  ul.story-cards li {
+    margin: 10px;
+  }
+  ul.story-cards {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  ul.story-cards li {
+    flex: 0 0 46%;
+    margin: 10px;
+  }
+  ul.story-cards {
+    justify-content: center;
+    text-align: center;
+  }
+}

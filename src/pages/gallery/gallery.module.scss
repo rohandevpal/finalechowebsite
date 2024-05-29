@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.container {
+  margin: 4.375rem auto;
+  max-width: $app-width;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 3.125rem;
+}
+
+@include respond(mobile) {
+  .grid {
+    grid-template-columns:  1fr;
+  }
+}

@@ -1,0 +1,45 @@
+/*
+FIXME: fix this whole file
+*/
+
+.carouselItem {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.carouselItemContent {
+  cursor: zoom-in;
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carouselImage {
+  height: auto;
+  transition: all 0.5s ease;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carouselText {
+  bottom: 220px;
+  position: absolute;
+  left: 50px;
+  width: 54%;
+  line-height: 1.6;
+}
+
+.carouselTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  color: #ffffff;
+  margin: 0px 0px 10px 0px;
+}
+
+.carouselSubtitle {
+  color: #ffffff;
+  font-weight: normal;
+}

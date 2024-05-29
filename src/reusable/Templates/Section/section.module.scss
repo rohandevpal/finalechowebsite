@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+.section {
+  margin: 3.75rem auto;
+  max-width: $app-width;
+  padding-left: 3.375rem;
+  padding-right: 3.375rem;
+}
+
+.darkBackground {
+  background-color: #f8f8f1;
+
+  section {
+    padding: 3.375rem;
+  }
+}
+
+.noMargin {
+  margin: 0 auto;
+}
+
+@include respond(mobile) {
+  .section {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .darkBackground {
+    .section {
+      padding: 1.25rem;
+    }
+  }
+}

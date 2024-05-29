@@ -1,0 +1,70 @@
+@import "../../../styles/variables";
+
+.container {
+  width: 100%;
+  height: 34.375rem;
+  background-color: #e9bc80;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 0rem;
+  box-sizing: border-box;
+}
+.subContainer {
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+  padding-left: 0.5rem;
+}
+
+.content {
+  height: 100%;
+  width: 100%;
+  max-width: $app-width;
+  box-sizing: border-box;
+
+  margin: auto;
+
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.heading {
+  margin: 0;
+  color: $color-text-inverted;
+  max-width: 70%;
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+.subtitle {
+  margin: 0;
+  color: $color-text-inverted;
+  max-width: 60%;
+}
+.ctaLink {
+  color: #ff476c !important;
+  text-shadow: 2px 2px 15px rgb(0 0 0 / 50%);
+}
+
+@include respond(touch) {
+  .subContainer {
+    padding-top: 5rem;
+  }
+}
+
+@include respond(mobile) {
+  .content {
+    padding-bottom: 2rem;
+  }
+
+  .heading {
+    max-width: 100%;
+  }
+
+  .subtitle {
+    max-width: 90%;
+  }
+}

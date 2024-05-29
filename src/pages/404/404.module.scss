@@ -1,0 +1,21 @@
+@import "../../styles/variables";
+
+.container {
+  height: 70vh;
+  max-width: $app-width;
+  margin: auto;
+  padding: 3.375rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo {
+  height: 7.5rem;
+  margin-bottom: 2rem;
+
+  img {
+    height: 100%;
+    max-width: 100%;
+  }
+}

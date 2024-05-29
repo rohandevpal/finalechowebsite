@@ -1,0 +1,157 @@
+@import "../../../styles/variables";
+
+.container {
+  background-color: #28446b;
+  color: $color-text-inverted;
+  font-family: $font-secondary;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0 auto;
+
+  padding-left: 3.375rem;
+  padding-right: 3.375rem;
+  padding-top: 4.375rem;
+
+  max-width: $app-width;
+
+  p {
+    width: 65%;
+  }
+}
+
+.info {
+  margin-top: 2.5rem;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkGroup {
+  display: flex;
+  justify-content: space-between;
+  flex: 0 1 50%;
+
+  margin-right: 2rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-top: 1rem;
+  opacity: 0.7;
+  &:hover {
+    opacity: 1;
+  }
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: $color-text-inverted;
+    font-size: 0.875rem;
+  }
+}
+
+.brand {
+  display: flex;
+
+  figure {
+    margin: 0;
+
+    height: 7.25rem;
+
+    display: flex;
+    align-items: center;
+
+    &:first-child {
+      margin-right: 1.25rem;
+    }
+
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      margin: auto;
+    }
+  }
+}
+
+.meta {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 0.75rem;
+  border-top: 2px solid #32507b;
+  margin-top: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  span {
+    flex: 1;
+  }
+}
+
+.social {
+  margin-right: 2rem;
+}
+
+.socialIcon {
+  height: 2.25rem;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  img {
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+
+@include respond(mobile) {
+  .content {
+    padding: 2.5rem 1.25rem 0 1.25rem;
+
+    p {
+      display: none;
+    }
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .linkGroup {
+    flex-wrap: wrap;
+    margin-bottom: 3.125rem;
+  }
+
+  .links {
+    margin-bottom: 1.875rem;
+    margin-right: 1.875rem;
+  }
+
+  .link {
+    margin-top: 0.625rem;
+  }
+
+  .meta {
+    flex-direction: column-reverse;
+  }
+
+  .social {
+    margin-right: 0;
+  }
+}

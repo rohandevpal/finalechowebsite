@@ -1,0 +1,34 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 5.1875rem;
+  margin: 0;
+  margin-right: 0.75rem;
+
+  img {
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
+.info {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+
+@include respond(mobile) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-right: 0;
+  }
+}

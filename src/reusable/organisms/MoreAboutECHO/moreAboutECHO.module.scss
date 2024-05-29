@@ -1,0 +1,33 @@
+@import "../../../styles/variables";
+
+.content {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-right: 3.75rem;
+  }
+
+  p {
+    flex: 1;
+  }
+}
+
+@include respond(mobile) {
+  .content {
+    flex-direction: column;
+  }
+
+  .info {
+    padding-bottom: 1.875rem;
+
+    &:not(:last-child) {
+      border-bottom: 0.1875rem solid $color-border;
+      margin-right: 0;
+    }
+  }
+}

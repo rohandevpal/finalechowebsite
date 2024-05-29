@@ -1,0 +1,56 @@
+@import "../../../styles/variables";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+:root {
+    --font-raleway: "Raleway", sans-serif;
+    --white-color: #fff;
+    --black-color: #000;
+    --black-color2: #1d1d1d;
+    --gray-color: #f7f7fd;
+    --paragraph-color: #272727;
+    --theme-color: #2991ec;
+    --body-color: #eaf1f5;
+    --border-color: #232323;
+    --black-soft-color: #7e7e7e;
+    --brand-color: #6e141e;
+}
+
+
+.content {
+  // max-width: $app-width;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.875rem 3.375rem;
+}
+
+.links {
+  display: flex;
+}
+
+
+.mainheaderecho{
+  background-color: rgb(255, 255, 255);
+  position: sticky ;
+  width: 100%;
+  z-index: 999999;
+  top: 0;
+}
+
+
+
+
+@include respond(mobile) {
+  .content {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}

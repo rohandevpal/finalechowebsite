@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.link {
+  &:visited,
+  &:link {
+    font-size: 1.25rem;
+
+    text-decoration: none;
+    font-weight: bold;
+    color: $color-primary;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.disable {
+  &:link,
+  &:visited {
+    opacity: 0.7;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

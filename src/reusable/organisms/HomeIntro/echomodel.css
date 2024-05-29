@@ -1,0 +1,34 @@
+ul.echo-model-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.echo-model-ul li {
+    flex: 0 0 49%;
+}
+
+section.echo_modal {
+    padding: 50px 0px;
+    background-color: #EEF1F0;
+}
+
+h2#echomodal-heading {
+    color: var(--brand-color);
+    font-weight: 600;
+}
+
+ul.echo-model-ul p {
+    padding: 20px 0px;
+}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 992px) {
+    ul.echo-model-ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}

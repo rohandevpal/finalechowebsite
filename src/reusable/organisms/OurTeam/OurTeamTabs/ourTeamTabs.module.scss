@@ -1,0 +1,24 @@
+@import "../../../../styles/variables";
+
+.container {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.8125rem;
+}
+
+@include respond(touch) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@include respond(mobile) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

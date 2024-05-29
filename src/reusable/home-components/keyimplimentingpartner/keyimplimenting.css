@@ -1,0 +1,83 @@
+/*Key Implementing Partners CSS start*/
+
+section.key-implementing {
+    padding: 50px 0px;
+}
+
+.key-implementing ul#pills-tab {
+    justify-content: center;
+    padding: 0px;
+}
+
+h2.key-implementing-heading {
+    color: var(--brand-color);
+    font-weight: 600;
+    position: relative;
+    font-size: 42px;
+}
+
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: var(--brand-color);
+    font-family: var(--font-raleway);
+    font-weight: 600;
+}
+
+ul.key-partners {
+    padding: 0;
+}
+section.key-implementing .nav-link:not(.active) {
+    background-color: #bcbcbc;
+    color: #000;
+    font-weight: 600;
+    font-family: var(--font-raleway);
+}
+
+ul#pills-tab li {
+    margin: 0px 20px;
+}
+
+.key-implementing-heading {
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+    color: var(--brand-color);
+}
+
+.key-implementing-heading:before,
+.key-implementing-heading:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid #000;
+}
+
+.key-implementing-heading:after {
+    margin: 0 -55% 0 .5em;
+}
+
+
+/*Key Implementing Partners CSS end*/
+
+@media (max-width:576px) {
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #fff;
+        background-color: var(--brand-color);
+        margin: 10px 0px;
+    }
+    section.key-implementing .nav-link:not(.active) {
+        background-color: #bcbcbc;
+        color: #000;
+        margin: 10px 0px;
+    }
+    .key-implementing ul#pills-tab {
+        padding: 0px;
+    }
+}

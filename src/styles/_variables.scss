@@ -1,0 +1,96 @@
+// MIXINS
+
+$color-primary: #ba0c2f;
+
+$color-base-1: #1f1c1c;
+$color-base-2: #24040a;
+$color-base-3: #4d4d4d;
+$color-base-4: #7c7c7c;
+$color-base-5: #eae9d6;
+$color-base-6: #f2f2e6;
+
+$color-text: $color-base-1;
+$color-text-inverted: #ffffff;
+
+$color-bg-primary: #ffffff;
+$color-bg-secondary: #f8f8f1;
+
+$color-border: #f0f0f0;
+
+$font-primary: "Roboto", sans-serif;
+$font-secondary: "Poppins", sans-serif;
+
+$app-width: 1280px;
+
+// MIXINS
+
+/*
+MEDIA QUERY MANAGER
+    
+  $breakpoint arguement choices:
+    small:    up to 479px [MOBILE] [TOUCH]
+    medium:   480px - 639px [MOBILE] [TOUCH] 
+
+    mobile:   up to 639px
+
+    large:    640px - 1023px [TOUCH]
+    
+    touch:    up to 1023px
+
+    x-large:  1024px - 1365px
+    big:      1366px - 1919px
+    huge:     1920px and up
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (max-width: 479px) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media screen and (min-width: 480px) and (max-width: 639px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == mobile {
+    @media screen and (max-width: 639px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == no-mobile {
+    @media screen and (min-width: 640px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media screen and (min-width: 640px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == touch {
+    @media screen and (max-width: 1023px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == x-large {
+    @media screen and (min-width: 1024px) and (max-width: 1365px) {
+      @content;
+    }
+  }
+  @if $breakpoint == big {
+    @media screen and (min-width: 1366px) and (max-width: 1919px) {
+      @content;
+    }
+  }
+  @if $breakpoint == huge {
+    @media screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+}

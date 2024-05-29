@@ -1,0 +1,16 @@
+@import "../../../styles/variables";
+
+.chip {
+  background-color: #e8f9f8;
+  color: #1ebebb;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  margin: 0 1rem 1rem 0;
+  border-radius: 3.75rem;
+}
+
+@include respond(mobile) {
+  .chip {
+    margin: 0 0.5rem 1rem 0;
+  }
+}

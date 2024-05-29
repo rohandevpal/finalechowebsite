@@ -1,0 +1,124 @@
+/*key focus area start css*/
+
+ul {
+  list-style: none;
+}
+
+section.key-focus-area {
+  padding: 50px 0px;
+  background-color: #f8fafc;
+}
+
+h2.keyfocus-heading {
+  padding: 20px 0px;
+  position: relative;
+  color: var(--brand-color);
+  font-weight: 700;
+  font-size: 42px;
+  overflow: hidden;
+}
+.keyfocus-heading::before,
+.keyfocus-heading::after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.keyfocus-heading::after {
+  margin: 0 -55% 0 0.5em;
+}
+/* h2.our-reach-heading:before {
+    position: absolute;
+    content: close-quote;
+    top: 50%;
+    background: #000;
+    width: 39%;
+    height: 1px;
+    left: 0;
+}
+
+h2.our-reach-heading:after {
+    position: absolute;
+    content: close-quote;
+    top: 50%;
+    background: #000;
+    width: 39%;
+    height: 1px;
+    right: 0;
+} */
+
+.main-key-box img {
+  width: 100%;
+}
+
+ul.key-focus-area-list li {
+  flex: 0 0 32%;
+}
+
+.main-key-box h3 {
+  font-size: 27px;
+  padding: 20px 0px;
+  font-weight: 600;
+}
+
+.main-key-box p {
+  font-size: 17px;
+  line-height: 22px;
+  word-spacing: 0px;
+  padding-bottom: 30px;
+  color: #404040;
+}
+
+.main-key-box {
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+ul.key-focus-area-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+
+/*key focus area end css*/
+
+@media (max-width: 576px) {
+  ul.key-focus-area-list li {
+    margin: 10px;
+  }
+  ul.key-focus-area-list {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  ul.key-focus-area-list li {
+    margin: 10px;
+  }
+  ul.key-focus-area-list {
+    flex-direction: column;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  ul.key-focus-area-list li {
+    flex: 0 0 49%;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  ul.key-focus-area-list {
+    padding: 0px;
+  }
+  .main-key-box {
+    text-align: center;
+    margin: 10px;
+  }
+}

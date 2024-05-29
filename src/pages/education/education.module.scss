@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+
+.impactGrid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paraColor {
+  color: $color-base-3;
+}
+
+.partnerGrid {
+  margin-top: 3.125rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  figure {
+    width: 9.375rem;
+    height: 7.0625rem;
+    img {
+      width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.125rem;
+}
+
+@include respond(mobile) {
+  .impactGrid {
+    flex-wrap: wrap;
+  }
+
+  .focusGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .partnerGrid {
+    flex-wrap: wrap;
+
+    figure {
+      margin-bottom: 1.5rem;
+    }
+  }
+}

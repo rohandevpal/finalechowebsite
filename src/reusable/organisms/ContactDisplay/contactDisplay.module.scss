@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+
+.container {
+  display: flex;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.form {
+  margin-right: 7.1875rem;
+}
+
+.heading {
+  margin: 0;
+  margin-bottom: 3.375rem;
+}
+
+@include respond(mobile) {
+  .container {
+    flex-direction: column;
+  }
+
+  .form {
+    margin-right: 0;
+    margin-bottom: 3.125rem;
+  }
+}

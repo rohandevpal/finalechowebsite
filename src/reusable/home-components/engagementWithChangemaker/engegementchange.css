@@ -1,0 +1,140 @@
+/*Engagement with Changemakers css Start*/
+
+.Engagement-with-Changemakers .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.Engagement-with-Changemakers .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Engagement-with-Changemakers .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.Engagement-with-Changemakers {
+    padding: 50px 0px;
+    background-color: #f9fafc;
+    position: relative;
+}
+
+.Engagement-heading {
+    color: var(--brand-color);
+    font-weight: 700;
+    font-size: 42px;
+    position: relative;
+}
+
+.Engagement-heading {
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 600;
+    color: var(--brand-color);
+}
+
+.Engagement-heading:before,
+.Engagement-heading:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 .5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid #000;
+}
+
+.Engagement-heading:after {
+    margin: 0 -55% 0 .5em;
+}
+
+.Engagement-with-Changemakers .swiper.mySwiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+    padding: 50px 0px;
+    position: relative;
+}
+
+.slide-box-changemaker {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 607px;
+    margin: 10px;
+}
+
+.Engagement-with-Changemakers p {
+    font-size: 14px;
+    color: #131212;
+    padding: 20px 0px;
+}
+
+.Engagement-with-Changemakers h3 {
+    color: #383838;
+    font-size: 27px;
+    font-weight: 600;
+    padding-top: 20px;
+    font-family: var(--font-raleway);
+}
+
+.slide-box-changemaker .content {
+    padding: 20px;
+}
+
+.slide-box-changemaker button a {
+    font-size: 18px;
+    color: #fff;
+}
+.slide-box-changemaker .content p {
+    font-weight: 400;
+    padding: 20px 0px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.slide-box-changemaker button {
+    border: none;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: url('../../../assets/images/home/slider-arrowright.svg');
+    position: absolute;
+    top: 0;
+    right: 100%;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+    content: url(../../../assets/images/home/slider-arrowleft.svg);
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+
+/*Engagement with Changemakers css end*/
+
+@media (max-width:786px){
+    .swiper-button-next{
+        display:none;
+
+    }
+    .swiper-button-prev{
+        display:none;
+        
+    }
+}

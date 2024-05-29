@@ -1,0 +1,69 @@
+@import "../../../styles/variables";
+
+.jobcard_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 0.0625rem solid #d3d3d3;
+  padding: 1.875rem 0;
+}
+
+.jobcard_subcontainer {
+  label {
+    margin: 1.25rem 0rem 0.625rem 0rem;
+  }
+}
+
+.jobcard_meta_container {
+  margin: 0.625rem 0rem;
+}
+
+.meta_data {
+  color: $color-base-3;
+  font-size: 1rem;
+  margin-right: 1.5625rem;
+}
+
+.read_press_Link {
+  padding: 1.5625rem 0;
+}
+
+.read-more {
+  &:visited,
+  &:link {
+    background-color: $color-primary;
+    color: $color-text-inverted;
+    padding: 1.125rem 2rem;
+    text-decoration: none;
+    &:hover {
+      background-color: darken($color-primary, 10);
+    }
+  }
+}
+
+.view-description {
+}
+
+.view-description_link {
+  &:visited,
+  &:link {
+    color: #c71f46;
+    text-decoration: underline;
+  }
+}
+
+@include respond(mobile) {
+  .jobcard_container {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+  }
+
+  .read_press_Link {
+    margin-top: 1.25rem;
+  }
+}

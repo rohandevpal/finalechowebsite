@@ -1,0 +1,87 @@
+// UTILITIES
+.is-text-centered {
+  text-align: center;
+}
+
+.is-underline {
+  text-decoration: underline;
+}
+
+/*
+MARGIN/PADDING Helper classes
+
+[margin/padding]-[position]-[size]
+
+Positions: 
+  - b: bottom
+  - r: right
+  - t: top
+  - l: left
+  - y: Y axis (top & bottom)
+  - x: X axis (left & right)
+*/
+
+$size-xs: 0.25rem;
+$size-sm: 0.5rem;
+$size-md: 1.25rem;
+$size-lg: 1.875rem;
+$size-xl: 3.375rem;
+
+.no-margin {
+  margin: 0;
+
+  &-t {
+    margin-top: 0;
+  }
+
+  &-b {
+    margin-bottom: 0;
+  }
+
+  &-y {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.margin {
+  &-b {
+    &-sm {
+      margin-bottom: $size-sm;
+    }
+
+    &-md {
+      margin-bottom: $size-md;
+    }
+
+    &-lg {
+      margin-bottom: $size-lg;
+    }
+    &-xl {
+      margin-bottom: $size-xl;
+    }
+  }
+
+  &-t {
+    &-md {
+      margin-top: $size-md;
+    }
+    &-xl {
+      margin-top: $size-xl;
+    }
+  }
+  &-y {
+    &-md {
+      margin-top: $size-md;
+      margin-bottom: $size-md;
+    }
+  }
+}
+
+.padding {
+  &-b {
+    &-xl {
+      padding-bottom: $size-xl;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.airTable {
+  width: 75%;
+
+  min-height: 25rem;
+  background: "transparent";
+  border: 1px solid $color-base-4;
+
+  &:last-child {
+    height: 62.5rem;
+  }
+}
+
+@include respond(touch) {
+  .airTable {
+    width: 100%;
+  }
+}

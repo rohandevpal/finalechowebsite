@@ -1,0 +1,54 @@
+/*serving the underserved start*/
+
+h2.serving-the-underserved-heading {
+  color: var(--brand-color);
+  font-weight: 700;
+  position: relative;
+  font-size: 42px;
+  margin: 0;
+  padding: 20px 0px;
+}
+
+section.serving-the-underserved {
+  background-color: #f8fafc;
+}
+
+section.serving-the-underserved {
+  padding: 50px 0px;
+}
+
+.serving-the-underserved-heading {
+  width: 100%;
+  margin: 0.7em auto;
+  overflow: hidden;
+  text-align: center;
+  font-weight: 300;
+  color: #fff;
+}
+
+.serving-the-underserved-heading:before,
+.serving-the-underserved-heading:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  margin: 0 0.5em 0 -55%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+}
+
+.serving-the-underserved-heading:after {
+  margin: 0 -55% 0 0.5em;
+}
+
+ul.youtube-video {
+  padding: 40px 0px;
+}
+
+section.serving-the-underserved p {
+    color: #525252;
+    line-height: 27px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* serving the underserved end*/

@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+.banner {
+  height: 75vh;
+  max-height: 43.75rem;
+}
+
+@include respond(mobile) {
+  .banner {
+    height: 95vh;
+    max-height: unset;
+    justify-content: center;
+  }
+}

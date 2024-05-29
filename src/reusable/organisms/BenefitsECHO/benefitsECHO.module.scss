@@ -1,0 +1,19 @@
+@import "../../../styles/variables";
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.75rem 4.375rem;
+
+  padding: 2.5rem;
+}
+
+@include respond(mobile) {
+  .content {
+    display: flex;
+
+    padding: 1.25rem;
+
+    overflow-x: scroll;
+  }
+}

@@ -1,0 +1,73 @@
+@import "../../../styles/variables";
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_subcontainer {
+  padding: 1.25rem 1.875rem;
+  background: #ffffff;
+  margin: 0.9375rem auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.image {
+  flex: 0 0 40%;
+  align-self: stretch;
+
+  margin-right: 1rem;
+  min-width: 17.5rem;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.press_mediaHouse {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.press_content {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info {
+  color: $color-base-4;
+}
+
+.press_btn {
+  margin-top: 1.1875rem;
+  .read_more {
+    &:visited,
+    &:link {
+      background-color: #f4e2e5;
+      color: $color-primary;
+      padding: 0.625rem;
+      text-decoration: none;
+      font-size: 0.875rem;
+
+      transition: all 0.2s;
+      &:hover {
+        color: #f4e2e5;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+@include respond(mobile) {
+  .card_subcontainer {
+    flex-direction: column;
+  }
+  .image {
+    margin-right: 0;
+  }
+}

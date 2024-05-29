@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+.react-player video {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+}
+
+.container {
+  background: linear-gradient(180deg, #f8f8f1 50%, $color-bg-primary 50%);
+}
+
+.videoContainer {
+  padding: "56.25% 0 0 0";
+  position: "relative";
+  border-radius: "1rem";
+  overflow: "hidden";
+  box-shadow: 4.5px 4.5px 3.6px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.046),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+// .video {
+//   height: 33.75rem;
+//   padding: 1.875rem;
+
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   box-sizing: border-box;
+
+//   iframe {
+//     height: 100%;
+//     width: 100%;
+//     max-width: 56.25rem;
+//     object-fit: contain;
+
+//     box-shadow: 0rem 0.625rem 1.25rem #00000029;
+//   }
+// }
+
+@include respond(mobile) {
+  .container {
+    background: linear-gradient(180deg, #f8f8f1 70%, $color-bg-primary 30%);
+  }
+  .video {
+    min-height: 0.625rem;
+    padding: 0.625rem 1.25rem;
+  }
+}

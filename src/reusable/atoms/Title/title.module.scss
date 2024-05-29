@@ -1,0 +1,27 @@
+@import "../../../styles/variables";
+
+.title {
+  font-size: 1.125rem;
+  font-weight: normal;
+
+  margin: 0;
+
+  text-transform: capitalize;
+}
+
+.hasTrail {
+  padding-left: 2.5rem;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    width: 1.875rem;
+    height: 0.125rem;
+    background-color: $color-base-1;
+
+    transform: translateY(-50%);
+  }
+}
