@@ -52,7 +52,7 @@ const Insightstories = () => {
                 </div>
             </div>
         </section>
-    )
+    );
 }
 
 

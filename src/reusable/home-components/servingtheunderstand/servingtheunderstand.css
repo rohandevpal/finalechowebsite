@@ -45,10 +45,25 @@ ul.youtube-video {
 }
 
 section.serving-the-underserved p {
-    color: #525252;
-    line-height: 27px;
-    width: 60%;
-    margin: 0 auto;
+  color: #525252;
+  line-height: 27px;
+  width: 60%;
+  font-size: 21px;
+  margin: 0 auto;
 }
 
 /* serving the underserved end*/
+
+@media (max-width: 768px) {
+  section.serving-the-underserved p {
+    color: #525252;
+    line-height: 20px;
+    width: 100%;
+    font-size: 14px;
+    margin: 0 auto;
+  }
+  h2.serving-the-underserved-heading{
+    font-size: 27px;
+    font-weight: 600;
+  }
+}

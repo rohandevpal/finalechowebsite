@@ -115,6 +115,18 @@ ul.sdg-images {
         flex: 0 0 33%;
         padding: 2px;
     }
+    h2.sdg-heading.text-center{
+        font-size: 27px;
+        line-height: 32px;
+        font-weight: 600;
+    }
+    section.Supporting-SDGs p {
+        color: #525252;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0;
+    }
+    
 }
 
 @media (max-width: 992px) {}

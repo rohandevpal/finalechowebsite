@@ -69,6 +69,13 @@ ul.reasearch-ul li:nth-child(2) {
     .rni-box {
         height: auto;
     }
+    .rni-box h3{
+        font-size: 21px;
+        font-weight: 600;
+    }
+    .rni-box p{
+        font-size: 14px;
+    }
 }
 
 @media (max-width:991px) {

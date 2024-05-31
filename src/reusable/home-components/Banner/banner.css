@@ -35,7 +35,7 @@ ul.main-slider li {
 
 .banner-content h1 {
   color: #9d1d2b;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 96px;
   padding-bottom: 20px;
 }
@@ -43,8 +43,8 @@ ul.main-slider li {
 .banner-content p {
   color: #434343;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 25px;
   padding-bottom: 20px;
 }
 
@@ -122,7 +122,20 @@ ul.main-slider li {
 
 @media (max-width: 768px) {
   section.mainBanner{
-    padding: 50px 0px;
+    padding: 50px 0px 0px 0px;
+  }
+  .banner-content h2{
+    font-size: 14px;
+  }
+  .banner-content h4{
+    font-size: 14px;
+  }
+  .banner-content h1{
+    font-size: 40px;
+  }
+  .banner-content p{
+    font-size: 14px;
+    line-height: 20px;
   }
   ul.main-slider {
     flex-direction: column;

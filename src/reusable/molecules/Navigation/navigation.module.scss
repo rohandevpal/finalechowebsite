@@ -19,7 +19,7 @@
     color: #5B5B5B !important;
     font-size: 20px;
     font-weight: 600;
-    text-transform: uppercase;
+
   }
   &:visited,
   &:link {
@@ -85,6 +85,8 @@
   }
 }
 
+
+
 .dropdownContent {
   
   display: none;
@@ -120,7 +122,7 @@
   margin: 5px 10px;
   font-weight: 600;
   background: #cccccc4b;
-  text-transform: uppercase;
+
 
   }
 }
@@ -133,7 +135,7 @@
 }
 
 span#last-dropdown {
-  background: #960000;
+  background: #960000 !important;
   padding: 10px 25px;
   color: #fff !important;
   border-radius: 10px;

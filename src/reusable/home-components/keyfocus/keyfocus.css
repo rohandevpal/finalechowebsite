@@ -99,6 +99,21 @@ ul.key-focus-area-list {
 }
 
 @media (max-width: 768px) {
+  h2.keyfocus-heading {
+    font-size: 27px;
+    font-weight: 600;
+  }
+  .main-key-box p {
+    font-size: 11px;
+    line-height: 18px;
+    word-spacing: 0px;
+    padding-bottom: 30px;
+    color: #404040;
+  }
+  .main-key-box h3{
+    font-size: 21px;
+    font-weight: 600;
+  }
   ul.key-focus-area-list li {
     margin: 10px;
   }

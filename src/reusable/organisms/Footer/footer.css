@@ -15,14 +15,14 @@ ul.footer-main {
 
 ul.footer-main li h3 {
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 20px;
     letter-spacing: 1px;
     text-align: left;
 }
 
 ul.footer-main li h1 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 800;
     color: #333333;
     line-height: 20px;
@@ -73,6 +73,8 @@ ul.footer-main li ul li a {
 
 .connect div img {
     width: 50%;
+    height: 50px;
+    object-fit: none;
 }
 
 .footer-container {
@@ -81,6 +83,26 @@ ul.footer-main li ul li a {
 
 ul.footer-main ul {
     padding: 0px;
+}
+
+ul.footer-0 li {
+    height: 30px;
+}
+
+ul.footer-1 li {
+    height: 30px;
+}
+
+ul.footer-2 li {
+    height: 30px;
+}
+
+ul.footer-3 li {
+    height: 30px;
+}
+
+ul.footer-4 li {
+    height: 30px;
 }
 
 

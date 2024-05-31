@@ -6,12 +6,12 @@ export const socialLinks = {
 };
 
 export const navLinks = [{
-        label: "Home",
+        label: "HOME",
         type: "single",
         path: "/"
     },
     {
-        label: "Who We Are",
+        label: "WHO WE ARE",
         type: "Single",
         path: "/about"
     },

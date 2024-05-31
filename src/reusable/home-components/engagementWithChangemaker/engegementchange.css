@@ -34,14 +34,6 @@ section.Engagement-with-Changemakers {
     position: relative;
 }
 
-.Engagement-heading {
-    width: 100%;
-    margin: .7em auto;
-    overflow: hidden;
-    text-align: center;
-    font-weight: 600;
-    color: var(--brand-color);
-}
 
 .Engagement-heading:before,
 .Engagement-heading:after {
@@ -136,5 +128,14 @@ section.Engagement-with-Changemakers {
     .swiper-button-prev{
         display:none;
         
+    }
+    .Engagement-heading{
+        font-size: 24px;
+        font-weight: 600;
+ 
+    }
+    .Engagement-with-Changemakers h3 {
+        font-size: 21px;
+        font-weight: 600;
     }
 }

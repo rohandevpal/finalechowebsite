@@ -94,4 +94,8 @@ h2.funding-partners-heading {
     ul.funding-partner-ul-second li {
         flex: 0 0 33%;
     }
+    h2.funding-partners-heading{
+        font-size: 27px;
+        font-weight: 600;
+    }
 }

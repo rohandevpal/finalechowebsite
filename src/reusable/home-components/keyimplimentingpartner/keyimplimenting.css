@@ -81,3 +81,11 @@ ul#pills-tab li {
         padding: 0px;
     }
 }
+@media (max-width: 768px){
+    h2.key-implementing-heading {
+        color: var(--brand-color);
+        font-weight: 600;
+        position: relative;
+        font-size: 27px;
+    }
+}
