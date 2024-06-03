@@ -10,24 +10,69 @@ const Banner = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % 3);
-        }, 3000);
+        }, 2000);
 
         return () => clearInterval(interval);
     }, []);
-    
+
     const [headings, setHeadings] = useState(["Healthcare", "Livelihood", "Education"]);
     const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentHeadingIndex((prevIndex) => (prevIndex + 1) % headings.length);
-        }, 3000);
+        }, 2000);
         return () => clearInterval(interval);
     }, [headings]);
 
     const handleDotClick = (index) => {
         setCurrentIndex(index);
     };
+
+    //text slider
+    const [currentIndexSlider, setCurrentIndexSlider] = useState(0);
+
+    useEffect(() => {
+        const sliderValueContainer = document.querySelector('.slider-value');
+        const textElements = [
+            document.getElementById('textMe'),
+            document.getElementById('textMy'),
+            document.getElementById('textOur')
+        ];
+
+        function updateSliderValue() {
+            sliderValueContainer.style.top = `-${currentIndexSlider * 80}px`;
+
+            switch (currentIndexSlider) {
+                case 0:
+                    textElements.forEach(el => el.style.color = "#9D1D2B");
+                    break;
+                case 1:
+                    textElements.forEach(el => el.style.color = "#5B5B5B");
+                    break;
+                case 2:
+                    textElements.forEach(el => el.style.color = "Green ");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        const autoSlide = () => {
+            if (currentIndexSlider < textElements.length - 1) {
+                setCurrentIndexSlider(currentIndexSlider + 1);
+            } else {
+                setCurrentIndexSlider(0);
+                setCurrentIndex(prevIndex => (prevIndex + 1) % 3);
+            }
+            updateSliderValue();
+        };
+
+        const intervalId = setInterval(autoSlide, 2000);
+
+        return () => clearInterval(intervalId);
+    }, [currentIndexSlider]);
+
 
     return (
         <section className="mainBanner">
@@ -39,12 +84,11 @@ const Banner = () => {
                                 <div className="banner-content">
                                     <h2 id="banner-text-animated">Enhancing Well Being of Communities</h2>
                                     <h4>Through Mentoring and Capacity Building in</h4>
-                                    <div className="flip-container">
-                                        <div className="flipper">
-                                            <h1 className="front">{headings[currentHeadingIndex]}</h1>
-                                            <h1 className="back">
-                                                {headings[(currentHeadingIndex + 1) % headings.length]}
-                                            </h1>
+                                    <div className="slider-container-text-banner">
+                                        <div className="slider-value">
+                                            <h1 id="textMe"> Healthcare</h1>
+                                            <h1 id="textMy">Education</h1>
+                                            <h1 id="textOur">Livelihood</h1>
                                         </div>
                                     </div>
                                     <p>Our comprehensive approach encompasses healthcare, education, livelihood and support for the achievement of the Sustainable Development Goals (SDGs).</p>
@@ -58,9 +102,9 @@ const Banner = () => {
                                     </div>
                                     <div className="dots-container">
                                         {[0, 1, 2].map((index) => (
-                                            <span 
-                                                key={index} 
-                                                className={`dot ${currentIndex === index ? 'active' : ''}`} 
+                                            <span
+                                                key={index}
+                                                className={`dot ${currentIndex === index ? 'active' : ''}`}
                                                 onClick={() => handleDotClick(index)}
                                             ></span>
                                         ))}

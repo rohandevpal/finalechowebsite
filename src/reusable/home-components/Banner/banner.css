@@ -119,10 +119,38 @@ ul.main-slider li {
   background-color: #d9d9d9;
 }
 /*main home banner CSS end*/
+.slider-container-text-banner {
+  margin: 50px 0px;
+  position: relative;
+  height: 80px;
+  overflow: hidden;
+}
+
+.slider-value {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  /* 50px per text * 3 texts */
+  transition: top 0.5s ease-in-out;
+}
+
+.slider-value h1 {
+  width: 100%;
+  margin: 0;
+  height: 80px;
+  line-height: 80px;
+  transition: color 0.5s ease-in-out;
+  /* Add transition for color change */
+}
+
+
 
 @media (max-width: 768px) {
   section.mainBanner {
     padding: 50px 0px 0px 0px;
+  }
+  .slider-container-text-banner{
+    margin: 0px;
   }
   .banner-content h2 {
     font-size: 14px;
@@ -163,6 +191,9 @@ ul.main-slider li {
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .slider-container-text-banner{
+    margin: 0px;
+  }
   .banner-content h2 {
     color: #9c0000;
     font-weight: bold;
@@ -179,13 +210,13 @@ ul.main-slider li {
     color: #9d1d2b;
     font-weight: 700;
     font-size: 56px;
-    margin: -16px 0px;
-}
+
+  }
   .banner-content p {
     color: #434343;
     font-weight: 400;
     font-size: 16px;
     line-height: 21px;
     padding-bottom: 20px;
-}
+  }
 }
