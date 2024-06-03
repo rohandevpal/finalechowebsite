@@ -14,19 +14,7 @@ const Testimonial = () => {
             name: "Meena Kumari",
             designation: "Government School Teacher, Andhra Pradesh",
 
-        },
-        {
-            qoute: "The ECHO program has helped me learn how to face the challenges and difficulties that come up in class.",
-            name: "Meena Kumari",
-            designation: "Government School Teacher, Andhra Pradesh",
-
-        },
-        {
-            qoute: "The ECHO program has helped me learn how to face the challenges and difficulties that come up in class.",
-            name: "Meena Kumari",
-            designation: "Government School Teacher, Andhra Pradesh",
-
-        },
+        }
     ]
 
     return (
@@ -47,7 +35,7 @@ const Testimonial = () => {
                                 },
                                 1024: {
                                     slidesPerView: 1,
-                                },
+                                },  
                             }}
                             autoplay={{
                                 delay: 5000,

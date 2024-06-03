@@ -32,8 +32,8 @@ section.Engagement-with-Changemakers {
     font-weight: 700;
     font-size: 42px;
     position: relative;
+    overflow: hidden;
 }
-
 
 .Engagement-heading:before,
 .Engagement-heading:after {
@@ -86,6 +86,7 @@ section.Engagement-with-Changemakers {
     font-size: 18px;
     color: #fff;
 }
+
 .slide-box-changemaker .content p {
     font-weight: 400;
     padding: 20px 0px;
@@ -120,19 +121,17 @@ section.Engagement-with-Changemakers {
 
 /*Engagement with Changemakers css end*/
 
-@media (max-width:786px){
-    .swiper-button-next{
-        display:none;
-
+@media (max-width:786px) {
+    .swiper-button-next {
+        display: none;
     }
-    .swiper-button-prev{
-        display:none;
-        
+    .swiper-button-prev {
+        display: none;
     }
-    .Engagement-heading{
+    .Engagement-heading {
         font-size: 24px;
         font-weight: 600;
- 
+        overflow: hidden;
     }
     .Engagement-with-Changemakers h3 {
         font-size: 21px;

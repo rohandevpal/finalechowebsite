@@ -121,19 +121,19 @@ ul.main-slider li {
 /*main home banner CSS end*/
 
 @media (max-width: 768px) {
-  section.mainBanner{
+  section.mainBanner {
     padding: 50px 0px 0px 0px;
   }
-  .banner-content h2{
+  .banner-content h2 {
     font-size: 14px;
   }
-  .banner-content h4{
+  .banner-content h4 {
     font-size: 14px;
   }
-  .banner-content h1{
+  .banner-content h1 {
     font-size: 40px;
   }
-  .banner-content p{
+  .banner-content p {
     font-size: 14px;
     line-height: 20px;
   }
@@ -156,9 +156,36 @@ ul.main-slider li {
   }
 }
 
-@media (max-width: 991px){
+@media (max-width: 991px) {
   .flip-container {
     height: 40px !important;
     margin: 0px 0px 10px 0px;
   }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .banner-content h2 {
+    color: #9c0000;
+    font-weight: bold;
+    font-size: 26px;
+  }
+  .banner-content h4 {
+    color: #000;
+    font-weight: 600;
+    font-size: 21px;
+    margin: 0px;
+    padding-bottom: 10px;
+  }
+  .banner-content h1 {
+    color: #9d1d2b;
+    font-weight: 700;
+    font-size: 56px;
+    margin: -16px 0px;
+}
+  .banner-content p {
+    color: #434343;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 20px;
+}
 }
