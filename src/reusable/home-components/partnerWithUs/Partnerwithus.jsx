@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { partnergif, partnergif2, leftbg, rightbg } from "./imports";
 import "./partnerwithus.css";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const PartnerItem = ({ imageSrc, title, description, buttonText }) => {
+
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      delay: 0,
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false,
+      anchorPlacement: 'top-bottom',
+    });
+  }, []);
+
+
   return (
     <div className="partner-section">
       <div className="img">
@@ -22,14 +40,14 @@ const PartnerItem = ({ imageSrc, title, description, buttonText }) => {
 const PartnerWithUs = () => {
   const partners = [
     {
-      imageSrc:  partnergif,
+      imageSrc: partnergif,
       title: "Partner with us",
       description:
         "If you are interested in contributing to ECHO India as a funder, please click on know more.",
       buttonText: "Explore More",
     },
     {
-      imageSrc:partnergif2 ,
+      imageSrc: partnergif2,
       title: "Start an ECHO",
       description:
         "If your organization is interested in replicating Project ECHO® in healthcare and/or education.",
@@ -44,7 +62,7 @@ const PartnerWithUs = () => {
           <div className="col-12">
             <ul className="partner-ul">
               {partners.map((partner, index) => (
-                <li key={index}>
+                <li key={index} data-aos="fade-right">
                   <PartnerItem {...partner} />
                 </li>
               ))}

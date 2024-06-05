@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { DefaultLayout } from "../../reusable/Templates";
 import { Banner, Echomodal, Engagementwithchangemaker, Fundingpartner, Insightstories, Keyfocus, Keyimplimenting, Newsroom, Ourreach, Partnerwithus, Servingtheunderstand, Supportingsdg, Testimonial } from "../../reusable/home-components";
 
+
 import * as styles from "./home.module.scss";
 
 const Home = () => {
@@ -57,7 +58,7 @@ const Home = () => {
   return (
     <DefaultLayout>
       <Banner />
-      <Keyfocus animation="fade-up"/>
+      <Keyfocus/>
       <Ourreach />
       <Echomodal />
       <Supportingsdg />

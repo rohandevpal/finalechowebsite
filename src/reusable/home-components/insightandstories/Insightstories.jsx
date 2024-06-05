@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { storyone, storytwo, storythree } from "./import";
 import './insightstories.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Insightstories = () => {
 
@@ -28,6 +30,17 @@ const Insightstories = () => {
         }
     ]
 
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
 
     return (
         <section class="Insights-and-Stories">
@@ -37,7 +50,7 @@ const Insightstories = () => {
                     <div class="col-12">
                         <ul className="story-cards">
                             {storieObject.map((area, index) => (
-                                <li key={index}>
+                                <li key={index} data-aos="fade-up">
                                     <div className="main-story-box">
                                         <img src={area.imageUrl} alt={area.heading} />
                                         <h3>{area.heading}</h3>

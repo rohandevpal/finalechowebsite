@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import sdgImages from './imports';
 import './supporting.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const SupportingSDGs = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
+
     return (
-        <section className="Supporting-SDGs">
+        <section className="Supporting-SDGs" data-aos="fade-up">
             <h2 className="sdg-heading text-center">Supporting SDGs</h2>
             <p className="text-center">We support 6 Sustainable Development Goals.</p>
             <div className="container">
