@@ -1,13 +1,26 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './engegementchange.css';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { changemaker1, changemaker2, changemaker3 } from "./imports";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Engagement = () => {
+  useEffect(() => {
+    AOS.init({
+        offset: 200,
+        delay: 0,
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false,
+        anchorPlacement: 'top-bottom',
+    });
+}, []);
 
   const dataEngagement = [
     {
@@ -32,7 +45,7 @@ const Engagement = () => {
   ]
 
   return (
-    <section className="Engagement-with-Changemakers">
+    <section className="Engagement-with-Changemakers" data-aos="fade-up">
       <h2 className="Engagement-heading text-center">
         Engagement with Changemakers
       </h2>

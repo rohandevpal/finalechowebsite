@@ -2,8 +2,24 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from '@material-ui/core';
 import { bannerone, bannertwo, bannerthree, tagline, mobileBanner1, mobileBanner2, mobileBanner3 } from "./imports";
 import './banner.css';
+import AOS from 'aos';
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            offset: 200,
+            delay: 0,
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+        });
+    }, []);
+
+
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery("(max-width: 768px)");
 

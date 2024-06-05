@@ -188,7 +188,7 @@ const Footer = () => {
                         <ul className="footer-main">
                             {/* Email Newsletter Signup */}
                             <li>
-                                <h1>Email Newsletter Signup</h1>
+                                <h1 className="text-uppercase">Email Newsletter Signup</h1>
                                 <div className="newsletter">
                                     <div className="inputEmail">
                                         <input type="text" placeholder="Your Email"/>
@@ -197,7 +197,7 @@ const Footer = () => {
                                         <img src={inputbtn} className="img-fluid" alt="img"/>
                                     </div>
                                 </div>
-                                <h3>Connect With Us</h3>
+                                <h3 className="text-uppercase">Connect With Us</h3>
                                 <div className="connect">
                                     <div className="fb">
                                         <img src={facebook} alt="" className="img-fluid"/>

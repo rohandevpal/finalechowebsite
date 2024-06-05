@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { Keyfocusareaone, Keyfocusareatwo, Keyfocusareathree } from "./imports";
 import './keyfocus.css';
-const Keyfocus = () => {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Keyfocus = (props) => {
+
+    useEffect(function () {
+        AOS.init({ duration: 1000 });
+    }, []);
+    
     const keyFocusAreas = [
         {
             heading: "Healthcare",
@@ -24,14 +32,14 @@ const Keyfocus = () => {
     ];
 
     return (
-        <section className="key-focus-area">
+        <section className="key-focus-area" data-aos={props.animation}>
             <h2 className="keyfocus-heading text-center">Key Focus Areas</h2>
             <div className="container">
                 <div className="row">
                     <div className="col-12" >
                         <ul className="key-focus-area-list">
                             {keyFocusAreas.map((area, index) => (
-                                <li key={index}>
+                                <li key={index} data-aos="fade-up">
                                     <div className="main-key-box">
                                         <img src={area.imageUrl} alt={area.heading} />
                                         <h3>{area.heading}</h3>

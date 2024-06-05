@@ -132,6 +132,7 @@ ul.main-slider li {
   height: 150px;
   /* 50px per text * 3 texts */
   transition: top 0.5s ease-in-out;
+ 
 }
 
 .slider-value h1 {
