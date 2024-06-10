@@ -6,8 +6,9 @@ module.exports = {
         title: "ECHO India",
         description: "ECHO India is a non-profit trust working towards building capacities across areas such as Healthcare, Education and other Sustainable Development Goals.",
     },
-
-
+    flags: {
+        DEV_SSR: true
+    },
     plugins: [
         "gatsby-plugin-react-helmet",
         "gatsby-transformer-remark",

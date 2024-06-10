@@ -398,6 +398,7 @@ ul.our-reach-section-ul li:first-child {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction:column-reverse;
     }
     ul.our-reach-section-ul li:nth-child(2) {
         flex: 0 0 100%;
