@@ -25,7 +25,7 @@ const ServingTheUnderserved = () => {
                 Serving the Underserved
             </h2>
             <p className="text-center">
-                Helps us to create a healthier and more equitable world by getting
+                Helps us create a healthier and more equitable world by getting
                 critical expertise to the communities that need it most.
             </p>
             <div className="container">

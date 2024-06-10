@@ -31,13 +31,13 @@ const Engagement = () => {
     },
     {
       Heading: "Tribal Health Summits",
-      para: "Hosted two national summits in collaboration with AIIMS Deoghar and Govt. Medical College, Srinagar to catalyse conversations for addressing healthcare challenges faced by tribal communities.",
+      para: "Hosted two national summits in collaboration with AIIMS Deoghar and Govt. Medical College, Srinagar, to catalyse conversations for addressing healthcare challenges faced by tribal communities.",
       btntext: "Read More",
       img: changemaker2
     },
     {
       Heading: "Partner Launch Trainings",
-      para: "ECHO India hosts dynamic two-day orientations for new partners launching their ECHO programs. Recent success in conducting numerous PLTs underscores our commitment to empowering and uniting a motivated community for positive impact.",
+      para: "ECHO India hosts dynamic two-day orientations for new partners launching ECHO programs. Recent success in conducting numerous PLTs underscores our commitment to empowering and uniting a motivated community for positive impact.",
       btntext: "Read More",
       img: changemaker3
     }

@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
-import { qoute, testimonialone } from "./import";
+import { qoute, testimonialone, testimonialtwo } from "./import";
 import './testimonials.css';
 
 const Testimonial = () => {
@@ -13,9 +13,15 @@ const Testimonial = () => {
             qoute: "The ECHO program has helped me learn how to face the challenges and difficulties that come up in class.",
             name: "Meena Kumari",
             designation: "Government School Teacher, Andhra Pradesh",
-
+        },
+        {
+            qoute: "Earlier we were focusing only on the subjects and completing the course. But now, we are interacting more frankly with the students with equal respect for both boys and girls.",
+            name: "Narendra Singh Rawat",
+            designation: "Government Senior Secondary School Kotra, Rajasthan",
         }
-    ]
+    ];
+
+    const testimonialImages = [testimonialone, testimonialtwo];
 
     return (
         <div className="testimonials">
@@ -35,21 +41,24 @@ const Testimonial = () => {
                                 },
                                 1024: {
                                     slidesPerView: 1,
-                                },  
+                                },
                             }}
                             autoplay={{
                                 delay: 5000,
                                 disableOnInteraction: false
                             }}
-
                         >
                             {Datatestimonials.map((testimonial, index) => (
                                 <SwiperSlide key={index}>
-                                    <div class="slide-testimonial">
-                                        <div class="img">
-                                            <img src={testimonialone} alt="testimonials Echo" class="img-fluid" />
+                                    <div className="slide-testimonial">
+                                        <div className="img">
+                                            <img 
+                                                src={testimonialImages[index % testimonialImages.length]} 
+                                                alt="testimonial" 
+                                                className="img-fluid" 
+                                            />
                                         </div>
-                                        <div class="text-testimonials">
+                                        <div className="text-testimonials">
                                             <img src={qoute} alt="quote echo" />
                                             <h4>{testimonial.qoute}</h4>
                                             <span id="testimonials-name">- {testimonial.name}</span>
@@ -63,8 +72,7 @@ const Testimonial = () => {
                 </div>
             </div>
         </div>
-    )
-
+    );
 }
 
 export default Testimonial;

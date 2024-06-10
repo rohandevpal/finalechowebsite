@@ -50,7 +50,7 @@ const PartnerWithUs = () => {
       imageSrc: partnergif2,
       title: "Start an ECHO",
       description:
-        "If your organization is interested in replicating Project ECHO® in healthcare and/or education.",
+        "If your organization is interested in replicating Project ECHO® in healthcare, education, or livelihood.",
       buttonText: "START AN ECHO",
     },
   ];

@@ -130,7 +130,6 @@
 // };
 
 // export default Footer;
-
 import React from "react";
 import { facebook, instagram, twitter, linkedin, inputbtn, youtube } from "./import";
 import './footer.css';
@@ -152,16 +151,16 @@ const Footer = () => {
             links: [
                 { label: "Healthcare", url: "#" },
                 { label: "Education", url: "#" },
+                { label: "Livelihood", url: "#" },
                 { label: "Other SDGs", url: "#" },
-                { label: "Impact and Outreach", url: "#" }
             ]
         },
         {
-            title: "NEWS",
+            title: "NEWSROOMS",
             links: [
                 { label: "Videos", url: "#" },
-                { label: "Press Releases", url: "#" },
-                { label: "Blog", url: "#" }
+                // { label: "Press Releases", url: "#" },
+                { label: "Insights and Stories", url: "#" }
             ]
         },
         {
@@ -171,11 +170,11 @@ const Footer = () => {
             ]
         },
         {
-            title: "JOIN OUR TEAMS",
+            title: "JOIN OUR TEAM",
             links: [
-                { label: "Impact and Outreach", url: "#" },
+                { label: "Partner with us", url: "#" },
                 { label: "Start an ECHO", url: "#" },
-                { label: "Open Positions", url: "#" }
+                { label: "Careers", url: "#" }
             ]
         }
     ];

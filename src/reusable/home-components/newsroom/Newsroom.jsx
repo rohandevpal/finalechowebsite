@@ -5,7 +5,6 @@ import './newsroom.css';
 const NewsItem = ({ imageSrc, description, buttonText, buttonLink, heading }) => {
     return (
         <div className="rni-box">
-            
             <img src={imageSrc} alt="newsroom echo india" />
             <h3>{heading}</h3>
             <p>{description}</p>
@@ -22,7 +21,7 @@ const Newsroom = () => {
             imageSrc: copywriting,
             heading:"Research",
             description:
-                "A growing body of research, especially peer-reviewed publications, showcases the effectiveness of the ECHO Model of capacity building in India across multiple healthcare focus areas like Mental Health, Cancer, Tuberculosis, and others.",
+                "A growing body of research, especially peer-reviewed publications, showcases the effectiveness of the ECHO Model of capacity building in India across multiple healthcare focus areas like Mental Health, Cancer, and Tuberculosis.",
             buttonText: "Explore more",
             buttonLink: "#",
         },

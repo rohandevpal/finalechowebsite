@@ -20,7 +20,7 @@ ul.story-cards {
   font-size: 14px;
   line-height: 20px;
   word-spacing: 0px;
-  padding: 20px 0px;
+  padding: 10px 0px 20px 0px;
   color: #404040;
 }
 
@@ -34,10 +34,10 @@ ul.story-cards {
 }
 
 .main-story-box h3 {
-  padding: 20px 0px;
-  margin: 0;
-  font-size: 27px;
-  font-weight: 600;
+  padding: 20px 0px 10px 0px;
+    margin: 0;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 .main-story-box img {

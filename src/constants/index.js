@@ -35,7 +35,7 @@ export const navLinks = [{
                 path: "/Livelihood",
             },
             {
-                label: "SDG's",
+                label: "SDGs",
                 type: "single",
                 path: "/sdg",
             },
@@ -43,7 +43,7 @@ export const navLinks = [{
         ],
     },
     {
-        label: "Resource",
+        label: "Resources",
         type: "group",
         children: [{
                 label: "Insights",

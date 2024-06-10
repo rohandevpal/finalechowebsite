@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 
 import { educationPartners, healthcarePartners1 } from "../../../../_data";
 
@@ -25,7 +25,6 @@ const renderTabsBody = (value) => {
           </div>
         </div>
       );
-
     case "education":
       return (
         <div className={styles.container}>

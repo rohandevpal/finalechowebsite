@@ -17,18 +17,18 @@ const Insightstories = () => {
         {
             heading: "Education",
             span: "All Teach All Learn : Capacity Building of Educators to Drive Better Learning Outcomes",
-            paragraph: "Every year, millions of people across India die of diseases that are preventable and even curable. This happens because the healthcare providers in their communities don’t have the knowledge and expertise needed to address these conditions.",
+            paragraph: "The ECHO model aims to bring a paradigm shift in the field of education, including the way the teachers and students engage and learn, through a practical learning approach.",
             linkBtn: "#",
             imageUrl: storytwo
         },
         {
             heading: "Livelihood",
             span: "ECHO Model Working Towards Addressing Sustainable Development Goals",
-            paragraph: "Every year, millions of people across India die of diseases that are preventable and even curable. This happens because the healthcare providers in their communities don’t have the knowledge and expertise needed to address these conditions.",
+            paragraph: "Going beyond health and education, the ECHO model can be leveraged to create lasting change across multiple sectors and achieve Sustainable Development Goals (SDGs)",
             linkBtn: "#",
             imageUrl: storythree
         }
-    ]
+    ];
 
     useEffect(() => {
         AOS.init({

@@ -107,7 +107,7 @@ const Banner = () => {
                                             <h1 id="textOur">Livelihood</h1>
                                         </div>
                                     </div>
-                                    <p>Our comprehensive approach encompasses healthcare, education, livelihood and support for the achievement of the Sustainable Development Goals (SDGs).</p>
+                                    <p>Our comprehensive approach encompasses healthcare, education, livelihood, and support for the achievement of the Sustainable Development Goals (SDGs).</p>
                                     <img src={tagline} alt="Moving knowledge not people" />
                                 </div>
                             </li>

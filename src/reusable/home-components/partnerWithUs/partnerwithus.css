@@ -74,7 +74,9 @@ ul.partner-ul li {
 
 
 /* partner echo section css end*/
-
+.partner-section .img img {
+    width: 70%;
+}
 @media (max-width:576px) {
     ul.partner-ul {
         flex-direction: column;

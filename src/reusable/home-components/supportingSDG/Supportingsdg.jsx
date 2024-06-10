@@ -21,7 +21,7 @@ const SupportingSDGs = () => {
     return (
         <section className="Supporting-SDGs" data-aos="fade-up">
             <h2 className="sdg-heading text-center">Supporting SDGs</h2>
-            <p className="text-center">We support 6 Sustainable Development Goals.</p>
+            <p className="text-center">We support 6 Sustainable Development Goals</p>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
