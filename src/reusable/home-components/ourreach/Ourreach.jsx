@@ -2,7 +2,7 @@ import React from "react";
 import './ourreach.css';
 import { indiamap, attendees, hubs, mcp, NHM, partner, session, ourreachsecond, Ourreachthird, pulse } from "./import";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Ourreach = () => {
     return (

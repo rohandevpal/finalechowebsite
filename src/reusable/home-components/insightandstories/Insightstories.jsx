@@ -10,7 +10,7 @@ const Insightstories = () => {
         {
             heading: "Healthcare",
             span: "Empowering Nurses – The Largest Cadre of Frontline Healthcare Warriors",
-            paragraph: "Every year, millions of people across India die of diseases that are preventable and even curable. This happens because the healthcare providers in their communities don’t have the knowledge and expertise needed to address these conditions.",
+            paragraph: "ECHO India has forged partnerships with prominent public sector and private sector institutions, including several nursing associations, to conduct capacity-building trainings specifically designed for nurses. Through the sessions conducted, ECHO India adopts a participatory approach to cover trainings and support in major healthcare areas through mutual respect and adult learning methodologies.",
             linkBtn: "#",
             imageUrl: storyone
         },
