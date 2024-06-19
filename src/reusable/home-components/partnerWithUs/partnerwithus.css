@@ -112,4 +112,7 @@ ul.partner-ul li {
     ul.partner-ul {
         flex-direction: column;
     }
+    .partner-section .img img{
+        position: inherit;
+    }
 }

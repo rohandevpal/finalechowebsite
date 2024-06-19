@@ -89,10 +89,10 @@ const Engagement = () => {
 
                 },
               }}
-            // autoplay={{
-            //   delay: 5000,
-            //   disableOnInteraction: false
-            // }}
+            autoplay={{
+              delay: 500000,
+              disableOnInteraction: false
+            }}
 
             >
               {dataEngagement.map((engagement, index) => (

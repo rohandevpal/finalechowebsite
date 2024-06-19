@@ -77,6 +77,7 @@ section.Engagement-with-Changemakers {
     font-weight: 600;
     padding-top: 20px;
     font-family: var(--font-raleway);
+    /* height: 60px; */
 }
 
 .slide-box-changemaker .content {
@@ -95,6 +96,7 @@ section.Engagement-with-Changemakers {
     font-size: 14px;
     line-height: 22px;
     text-align: justify;
+    /* height: 190px; */
 }
 
 .slide-box-changemaker button {
@@ -144,5 +146,11 @@ ul.slide-box-changemaker li {
         text-align: center;
         font-size: 21px;
         font-weight: 600;
+    }
+    .Engagement-with-Changemakers h3{
+        height: auto;
+    }
+    .slide-box-changemaker .content p{
+        height: auto;
     }
 }

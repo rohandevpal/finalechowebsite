@@ -150,9 +150,9 @@ const Ourreach = () => {
                                     <h2>Livelihood in India</h2>
                                     <p>is intricately tied to the socio-economic fabric of communities, particularly in rural and underserved areas. <strong>Approximately 70% of rural households rely primarily on agriculture </strong>for their sustenance. However, it's important
                                         to recognize <strong> that 82% of farmers fall into the small and marginal category, facing challenges </strong> such as timely access to resources and unpredictable weather conditions. The lack of reliable income options significantly
-                                        impacts community well-being, contributing to poverty and distress migration. <br/><br/> 
+                                        impacts community well-being, contributing to poverty and distress migration. <br /><br />
                                         <strong>ECHO India collaborates with its partners</strong> to identify best practices and models <strong> in agriculture, animal husbandry, water governance, and
-                                        forest management.</strong> We utilize the ECHO model to disseminate knowledge and build capacities among frontline professionals and farmers, empowering them to address the complex challenges in the livelihood sector.<br/><br/> Through
+                                            forest management.</strong> We utilize the ECHO model to disseminate knowledge and build capacities among frontline professionals and farmers, empowering them to address the complex challenges in the livelihood sector.<br /><br /> Through
                                         these efforts, our <strong> goal is to enhance food security, promote sustainable utilization of natural resources,</strong> secure farm-based livelihoods, and strengthen resilience towards climate change.</p>
                                 </div>
                                 <div className="img">
