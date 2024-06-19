@@ -25,8 +25,7 @@ const ServingTheUnderserved = () => {
                 Serving the Underserved
             </h2>
             <p className="text-center">
-                Helps us create a healthier and more equitable world by getting
-                critical expertise to the communities that need it most.
+            The ECHO Model helps create a more equitable world by getting critical expertise to the communities that need it most.
             </p>
             <div className="container">
                 <div className="row">

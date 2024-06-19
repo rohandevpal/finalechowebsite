@@ -10,7 +10,7 @@ const Insightstories = () => {
         {
             heading: "Healthcare",
             span: "Empowering Nurses – The Largest Cadre of Frontline Healthcare Warriors",
-            paragraph: "ECHO India has forged partnerships with prominent public sector and private sector institutions, including several nursing associations, to conduct capacity-building trainings specifically designed for nurses. Through the sessions conducted, ECHO India adopts a participatory approach to cover trainings and support in major healthcare areas through mutual respect and adult learning methodologies.",
+            paragraph: "ECHO India has forged partnerships with prominent public sector and private sector institutions, including several nursing associations, to conduct capacity-building trainings specifically designed for nurses. ",
             linkBtn: "#",
             imageUrl: storyone
         },
@@ -42,22 +42,34 @@ const Insightstories = () => {
         });
     }, []);
 
+    const truncateText = (text, maxLength) => {
+        return text.length > maxLength ? text.slice(0, maxLength) + '...' : text;
+    };
+
     return (
-        <section class="Insights-and-Stories">
-            <h2 class="insights-heading text-center">Insights and Stories</h2>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
+        <section className="Insights-and-Stories">
+            <h2 className="insights-heading text-center">Insights and Stories</h2>
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
                         <ul className="story-cards">
                             {storieObject.map((area, index) => (
                                 <li key={index} data-aos="fade-up">
-                                    <div className="main-story-box">
-                                        <img src={area.imageUrl} alt={area.heading} />
-                                        <h3>{area.heading}</h3>
-                                        <p className="span">{area.span}</p>
-                                        <p>{area.paragraph}</p>
-                                        <a href={area.buttonLink} className="custom-button-main">Know More</a>
-                                    </div>
+                                    <ul className="main-story-box">
+                                        <li>
+                                            <img src={area.imageUrl} alt={area.heading} />
+                                        </li>
+                                        <li>
+                                            <h3>{area.heading}</h3>
+                                        </li>
+                                        <li>
+                                            <p className="span">{area.span}</p>
+                                            <p>{truncateText(area.paragraph, 250)}</p>
+                                        </li>
+                                        <li>
+                                            <a href={area.linkBtn} className="custom-button-main">Know More</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             ))}
                         </ul>
@@ -67,6 +79,5 @@ const Insightstories = () => {
         </section>
     );
 }
-
 
 export default Insightstories;

@@ -40,7 +40,7 @@ const Ourreach = () => {
                                                         <img src={hubs} alt="hubs echo inda" />
                                                     </div>
                                                     <div class="text">
-                                                        <h2 className="bebas-neue-regular">350+</h2>
+                                                        <h2 className="bebas-neue-regular">400+</h2>
                                                         <p>Hubs</p>
                                                     </div>
                                                 </div>
@@ -55,7 +55,7 @@ const Ourreach = () => {
                                                         <img src={session} alt="sessions echo india" />
                                                     </div>
                                                     <div class="text">
-                                                        <h2 className="bebas-neue-regular">20000+</h2>
+                                                        <h2 className="bebas-neue-regular">25000+</h2>
                                                         <p>sessions</p>
                                                     </div>
                                                 </div>
@@ -70,7 +70,7 @@ const Ourreach = () => {
                                                         <img src={attendees} alt="attendees echo india" />
                                                     </div>
                                                     <div class="text">
-                                                        <h2 className="bebas-neue-regular">1600000+</h2>
+                                                        <h2 className="bebas-neue-regular">1700000+</h2>
                                                         <p>Attendees</p>
                                                     </div>
                                                 </div>
@@ -79,7 +79,7 @@ const Ourreach = () => {
                                         <div class="bottom-multisection">
                                             <div class="partner">
                                                 <img src={partner} alt="partner echo india" />
-                                                <h2 className="bebas-neue-regular">17+</h2>
+                                                <h2 className="bebas-neue-regular">19+</h2>
                                             </div>
                                             <div class="MCP">
                                                 <img src={mcp} alt="MCP echo india" />
@@ -87,7 +87,7 @@ const Ourreach = () => {
                                             </div>
                                             <div class="nhm-partner">
                                                 <img src={NHM} alt="NHM echo india" />
-                                                <h2 className="bebas-neue-regular">28</h2>
+                                                <h2 className="bebas-neue-regular">29</h2>
                                             </div>
                                         </div>
                                     </li>
@@ -105,7 +105,7 @@ const Ourreach = () => {
                                                 <img src={hubs} alt="hubs echo inda" />
                                             </div>
                                             <div class="text">
-                                                <h2 className="bebas-neue-regular">350+</h2>
+                                                <h2 className="bebas-neue-regular">20+</h2>
                                                 <p>Hubs</p>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@ const Ourreach = () => {
                                                 <img src={session} alt="sessions echo india" />
                                             </div>
                                             <div class="text">
-                                                <h2 className="bebas-neue-regular">20000+</h2>
+                                                <h2 className="bebas-neue-regular">550+</h2>
                                                 <p>sessions</p>
                                             </div>
                                         </div>
@@ -135,7 +135,7 @@ const Ourreach = () => {
                                                 <img src={attendees} alt="attendees echo india" />
                                             </div>
                                             <div class="text">
-                                                <h2 className="bebas-neue-regular">1600000+</h2>
+                                                <h2 className="bebas-neue-regular">16000+</h2>
                                                 <p>Attendees</p>
                                             </div>
                                         </div>

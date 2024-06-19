@@ -9,11 +9,11 @@ const Keyfocus = (props) => {
     useEffect(function () {
         AOS.init({ duration: 1000 });
     }, []);
-    
+
     const keyFocusAreas = [
         {
             heading: "Healthcare",
-            paragraph: "Every year, millions of people across India die of diseases that are preventable and even curable. This happens because the healthcare providers in their communities don’t have the knowledge and expertise needed to address these conditions.",
+            paragraph: "Every year, millions of people across India die of preventable and curable diseases. This happens because healthcare providers in their communities lack the knowledge and expertise needed to address these conditions.",
             buttonLink: "/healthcare",
             imageUrl: Keyfocusareaone
         },
@@ -40,12 +40,21 @@ const Keyfocus = (props) => {
                         <ul className="key-focus-area-list">
                             {keyFocusAreas.map((area, index) => (
                                 <li key={index} data-aos="fade-up">
-                                    <div className="main-key-box">
-                                        <img src={area.imageUrl} alt={area.heading} />
+                                    <ul className="main-key-box">
+                                        <li>
+                                            <img src={area.imageUrl} alt={area.heading} />
+                                        </li>
+                                        <li>
                                         <h3>{area.heading}</h3>
-                                        <p>{area.paragraph}</p>
-                                        <a href={area.buttonLink} className="custom-button-main">Know More</a>
-                                    </div>
+                                        </li>
+                                        <li>
+                                           
+                                            <p>{area.paragraph}</p>
+                                        </li>
+                                        <li>
+                                            <a href={area.buttonLink} className='custom-button-main'>Know More</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             ))}
                         </ul>

@@ -46,6 +46,8 @@ ul.reasearch-ul li .rni-box img {
     font-weight: 400;
     line-height: 26px;
     margin-top: -47px;
+    height: 146px;
+    text-align: justify;
 }
 
 
@@ -59,12 +61,14 @@ ul.reasearch-ul li:nth-child(2) {
 /*research newsroom css end*/
 
 @media (max-width:768px) {
+   
     ul.reasearch-ul li {
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         margin: 20px 0px;
         border-radius: 20px;
         padding: 20px;
     }
+   
     ul.reasearch-ul {
         flex-direction: column;
     }
@@ -78,17 +82,28 @@ ul.reasearch-ul li:nth-child(2) {
     .rni-box p{
         font-size: 14px;
         margin: 0px;
+        height: 146px;
+        
     }
+    
 }
 
 @media (max-width:991px) {
     ul.reasearch-ul li {
-        flex: 0 0 50%;
+        flex: 0 0 50% !important;
     }
     ul.reasearch-ul {
         justify-content: center;
     }
-    .rni-box {
+    .rni-box p{
+        margin: 0px;
         height: auto;
+        text-align: center;
+    }
+
+    ul.reasearch-ul li:nth-child(2){
+        border-left: 1px solid #ccc;
+        border-right: 0px solid #ccc;
+   
     }
 }

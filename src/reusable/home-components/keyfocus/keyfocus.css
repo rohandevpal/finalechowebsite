@@ -70,10 +70,11 @@ ul.key-focus-area-list li {
   word-spacing: 0px;
   padding-bottom: 30px;
   color: #404040;
+  text-align: justify;
 }
 
 .main-key-box {
-  padding: 30px;
+  padding: 25px;
   background: #fff;
   border-radius: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -103,12 +104,14 @@ ul.key-focus-area-list {
     font-size: 27px;
     font-weight: 600;
   }
+
   .main-key-box p {
     font-size: 11px;
     line-height: 18px;
     word-spacing: 0px;
     padding-bottom: 30px;
     color: #404040;
+    text-align: center;
   }
   .main-key-box h3{
     font-size: 21px;

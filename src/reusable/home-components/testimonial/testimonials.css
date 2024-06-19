@@ -50,6 +50,7 @@
 .slide-testimonial {
     display: flex;
     align-items: center;
+    width: 80%;
 }
 
 .slide-testimonial .img {

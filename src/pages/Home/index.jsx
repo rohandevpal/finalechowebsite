@@ -60,16 +60,16 @@ const Home = () => {
       <Banner />
       <Keyfocus/>
       <Ourreach />
-      <Echomodal />
-      <Supportingsdg />
-      <Servingtheunderstand />
+       <Echomodal />
+     <Supportingsdg />
+       <Servingtheunderstand />
       <Insightstories />
       <Engagementwithchangemaker />
       <Keyimplimenting />
       <Fundingpartner />
       <Partnerwithus />
       <Testimonial />
-      <Newsroom />
+      <Newsroom /> 
     </DefaultLayout>
   );
 };

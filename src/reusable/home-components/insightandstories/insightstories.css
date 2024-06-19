@@ -1,106 +1,126 @@
 /* insights and stories css start*/
 
-
-
 section.Insights-and-Stories {
-  padding: 50px 0px;
+    padding: 50px 0px;
 }
+
 ul.story-cards {
-  padding: 0;
+    padding: 0;
 }
+
 .main-story-box {
-  padding: 30px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  height: auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    height: auto;
 }
 
 .main-story-box p {
-  font-size: 14px;
-  line-height: 20px;
-  word-spacing: 0px;
-  padding: 10px 0px 20px 0px;
-  color: #404040;
+    font-size: 14px;
+    line-height: 20px;
+    word-spacing: 0px;
+    padding: 10px 0px 20px 0px;
+    color: #404040;
+    height: 73px;
+    margin-bottom: 59px;
+    text-align: justify;
+    /* height: 80px; */
 }
 
 .main-story-box .span {
-  font-family: var(--font-raleway);
-  font-size: 17px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  color: #101828;
+    font-family: var(--font-raleway);
+    font-size: 17px;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 20px;
+    color: #101828;
 }
 
 .main-story-box h3 {
-  padding: 20px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
     margin: 0;
     font-size: 27px;
     font-weight: 600;
 }
 
 .main-story-box img {
-  width: 100%;
+    width: 100%;
 }
 
 ul.story-cards li {
-  flex: 0 0 31%;
+    flex: 0 0 31%;
 }
 
 ul.story-cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 30px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
 }
 
 .insights-heading {
-  width: 100%;
-  text-align: center;
-  font-weight: 700;
-  color: var(--brand-color);
-  font-size: 42px;
-  overflow: hidden;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    color: var(--brand-color);
+    font-size: 42px;
+    overflow: hidden;
 }
 
 .insights-heading:before,
 .insights-heading:after {
-  content: "";
-  display: inline-block;
-  width: 50%;
-  margin: 0 0.5em 0 -55%;
-  vertical-align: middle;
-  border-bottom: 1px solid #000;
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 0.5em 0 -55%;
+    vertical-align: middle;
+    border-bottom: 1px solid #000;
 }
 
 .insights-heading:after {
-  margin: 0 -55% 0 0.5em;
+    margin: 0 -55% 0 0.5em;
 }
+
+ul.story-cards li {
+    flex: 0 0 31%;
+}
+
 
 /* insights and stories css end*/
 
 @media (max-width: 768px) {
-  ul.story-cards li {
-    margin: 10px;
-  }
-  ul.story-cards {
-    flex-direction: column;
-  }
-  .insights-heading{
-    font-size: 27px;
-    font-weight: 600;
-  }
+    ul.story-cards li {
+        margin: 10px;
+    }
+    ul.story-cards {
+        flex-direction: column;
+    }
+    .insights-heading {
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .main-story-box p{
+        height: auto;
+    }
 }
 
 @media (max-width: 991px) {
-  ul.story-cards li {
-    flex: 0 0 46%;
-    margin: 10px;
-  }
-  ul.story-cards {
-    justify-content: center;
-    text-align: center;
-  }
+    ul.story-cards li {
+        flex: 0 0 46%;
+        margin: 10px;
+    }
+    ul.story-cards {
+        justify-content: center;
+        text-align: center;
+    }
+    ul.story-cards li {
+        flex: 0 0 45%;
+    }
+    .main-story-box p {
+        height: auto;
+        text-align: center;
+        margin-bottom: 0px;
+    }
 }

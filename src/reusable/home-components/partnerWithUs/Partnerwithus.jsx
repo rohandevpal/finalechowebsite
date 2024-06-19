@@ -43,15 +43,15 @@ const PartnerWithUs = () => {
       imageSrc: partnergif,
       title: "Partner with us",
       description:
-        "If you are interested in contributing to ECHO India as a funder, please click on know more.",
-      buttonText: "Explore More",
+        "Join us in building sustainable and scalable solutions, empowering frontline professionals to better serve their communities.",
+      buttonText: "Know More",
     },
     {
       imageSrc: partnergif2,
       title: "Start an ECHO",
       description:
-        "If your organization is interested in replicating Project ECHO® in healthcare, education, or livelihood.",
-      buttonText: "START AN ECHO",
+        "If your organization is interested in replicating the ECHO Model in Healthcare, Education, or Livelihood, click below.",
+      buttonText: "Start an ECHO",
     },
   ];
 

@@ -87,6 +87,10 @@
 
 
 
+
+
+
+
 .dropdownContent {
   
   display: none;
@@ -139,4 +143,16 @@ span#last-dropdown {
   padding: 10px 25px;
   color: #fff !important;
   border-radius: 10px;
+}
+
+span#last-dropdown:before {
+  content: "";
+  position: absolute;
+  border-right: 0.125rem solid #fff;
+  border-bottom: 0.125rem solid #fff;
+  height: 0.4375rem;
+  width: 0.4375rem;
+  right: 14px;
+  top: 45%;
+  transform: translateY(-50%) rotateZ(45deg);
 }

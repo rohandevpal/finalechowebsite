@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useMediaQuery } from '@material-ui/core';
-import { bannerone, bannertwo, bannerthree, tagline, mobileBanner1, mobileBanner2, mobileBanner3 } from "./imports";
+import { bannerone, bannerthree, bannerfour, tagline, mobileBanner1, mobileBanner3, mobileBanner4 } from "./imports";
 import './banner.css';
 import AOS from 'aos';
 
@@ -114,7 +114,7 @@ const Banner = () => {
                             <li>
                                 <div className="slider-main">
                                     <div className="slide active">
-                                        <img src={isMobile ? (currentIndex === 0 ? mobileBanner1 : currentIndex === 1 ? mobileBanner2 : mobileBanner3) : (currentIndex === 0 ? bannerone : currentIndex === 1 ? bannertwo : bannerthree)} alt="" />
+                                        <img src={isMobile ? (currentIndex === 0 ? mobileBanner1 : currentIndex === 1 ? mobileBanner3 : mobileBanner4) : (currentIndex === 0 ? bannerone : currentIndex === 1 ? bannerthree : bannerfour)} alt="" />
                                     </div>
                                     <div className="dots-container">
                                         {[0, 1, 2].map((index) => (

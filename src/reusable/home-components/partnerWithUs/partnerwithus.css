@@ -32,6 +32,7 @@ ul.partner-ul li {
     justify-content: space-between;
     align-items: center;
     padding: 50px 0px;
+    position: relative;
 }
 
 .partner-section div:first-child {
@@ -70,12 +71,16 @@ ul.partner-ul li {
     line-height: 24px;
     padding: 20px 0px;
     font-weight: 400;
+    text-align: justify;
 }
 
 
 /* partner echo section css end*/
 .partner-section .img img {
-    width: 70%;
+    width: 25%;
+    position: absolute;
+    left: 32px;
+    top: 20%;
 }
 @media (max-width:576px) {
     ul.partner-ul {
@@ -98,6 +103,7 @@ ul.partner-ul li {
         line-height: 19px;
         padding: 20px 0px;
         font-weight: 400;
+        text-align: center;
     }
 }
 @media (max-width:991px) {
