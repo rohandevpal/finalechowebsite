@@ -10,7 +10,7 @@ const Banner = () => {
         AOS.init({
             offset: 200,
             delay: 0,
-            duration: 1000,
+            duration: 3000,
             easing: 'ease-in-out',
             once: true,
             mirror: false,
@@ -18,48 +18,26 @@ const Banner = () => {
         });
     }, []);
 
-
-
     const [currentIndex, setCurrentIndex] = useState(0);
     const isMobile = useMediaQuery("(max-width: 768px)");
 
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex(prevIndex => (prevIndex + 1) % 3);
-        }, 2000);
+        }, 3000);
 
         return () => clearInterval(interval);
     }, []);
 
-    const [headings, setHeadings] = useState(["Healthcare", "Livelihood", "Education"]);
-    const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
-
     useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentHeadingIndex((prevIndex) => (prevIndex + 1) % headings.length);
-        }, 2000);
-        return () => clearInterval(interval);
-    }, [headings]);
-
-    const handleDotClick = (index) => {
-        setCurrentIndex(index);
-    };
-
-    //text slider
-    const [currentIndexSlider, setCurrentIndexSlider] = useState(0);
-
-    useEffect(() => {
-        const sliderValueContainer = document.querySelector('.slider-value');
         const textElements = [
             document.getElementById('textMe'),
             document.getElementById('textMy'),
             document.getElementById('textOur')
         ];
 
-        function updateSliderValue() {
-            sliderValueContainer.style.top = `-${currentIndexSlider * 80}px`;
-
-            switch (currentIndexSlider) {
+        function updateTextColor() {
+            switch (currentIndex) {
                 case 0:
                     textElements.forEach(el => el.style.color = "#9D1D2B");
                     break;
@@ -67,26 +45,19 @@ const Banner = () => {
                     textElements.forEach(el => el.style.color = "#5B5B5B");
                     break;
                 case 2:
-                    textElements.forEach(el => el.style.color = "Green ");
+                    textElements.forEach(el => el.style.color = "Green");
                     break;
                 default:
                     break;
             }
         }
 
-        const autoSlide = () => {
-            if (currentIndexSlider < textElements.length - 1) {
-                setCurrentIndexSlider(currentIndexSlider + 1);
-            } else {
-                setCurrentIndexSlider(0);
-                setCurrentIndex(prevIndex => (prevIndex + 1) % 3);
-            }
-            updateSliderValue();
-        };
-        const intervalId = setInterval(autoSlide, 2000);
-        return () => clearInterval(intervalId);
-    }, [currentIndexSlider]);
+        updateTextColor();
+    }, [currentIndex]);
 
+    const handleDotClick = (index) => {
+        setCurrentIndex(index);
+    };
 
     return (
         <section className="mainBanner">
@@ -99,7 +70,7 @@ const Banner = () => {
                                     <h2 id="banner-text-animated">Enhancing Well Being of Communities</h2>
                                     <h4>Through Mentoring and Capacity Building in</h4>
                                     <div className="slider-container-text-banner">
-                                        <div className="slider-value">
+                                        <div className="slider-value" style={{ top: `-${currentIndex * 80}px` }}>
                                             <h1 id="textMe"> Healthcare</h1>
                                             <h1 id="textMy">Education</h1>
                                             <h1 id="textOur">Livelihood</h1>
