@@ -58,7 +58,7 @@ const Home = () => {
   return (
     <DefaultLayout>
       <Banner />
-      {/* <Keyfocus />
+      <Keyfocus />
       <Ourreach />
       <Echomodal />
       <Supportingsdg />
@@ -69,7 +69,7 @@ const Home = () => {
       <Fundingpartner />
       <Partnerwithus />
       <Testimonial />
-      <Newsroom /> */}
+      <Newsroom />
     </DefaultLayout>
   );
 };
