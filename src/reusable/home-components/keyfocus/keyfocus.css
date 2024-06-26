@@ -70,7 +70,7 @@ ul.key-focus-area-list li {
   word-spacing: 0px;
   padding-bottom: 30px;
   color: #404040;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .main-key-box {

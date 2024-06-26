@@ -9,10 +9,10 @@ const VideoComponent = ({ src }) => {
             height="678"
             src={src}
             title="ECHO Model™ Explainer Video | ECHO India | Capacity Building"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
         ></iframe>
     );
 };

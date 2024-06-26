@@ -1,34 +1,11 @@
 import React, { useEffect } from 'react';
-import { storyone, storytwo, storythree } from "./import";
+import { storyone,storytwo,storythree} from '../../../_data/homedata';
 import './insightstories.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { storieObject } from '../../../_data/homedata';
 
 const Insightstories = () => {
-
-    const storieObject = [
-        {
-            heading: "Healthcare",
-            span: "Empowering Nurses – The Largest Cadre of Frontline Healthcare Warriors",
-            paragraph: "ECHO India has forged partnerships with prominent public sector and private sector institutions, including several nursing associations, to conduct capacity-building trainings specifically designed for nurses. ",
-            linkBtn: "#",
-            imageUrl: storyone
-        },
-        {
-            heading: "Education",
-            span: "All Teach All Learn : Capacity Building of Educators to Drive Better Learning Outcomes",
-            paragraph: "The ECHO model aims to bring a paradigm shift in the field of education, including the way the teachers and students engage and learn, through a practical learning approach.",
-            linkBtn: "#",
-            imageUrl: storytwo
-        },
-        {
-            heading: "Livelihood",
-            span: "ECHO Model Working Towards Addressing Sustainable Development Goals",
-            paragraph: "Going beyond health and education, the ECHO model can be leveraged to create lasting change across multiple sectors and achieve Sustainable Development Goals (SDGs)",
-            linkBtn: "#",
-            imageUrl: storythree
-        }
-    ];
 
     useEffect(() => {
         AOS.init({

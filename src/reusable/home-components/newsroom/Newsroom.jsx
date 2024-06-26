@@ -19,7 +19,7 @@ const Newsroom = () => {
     const newsItems = [
         {
             imageSrc: copywriting,
-            heading:"Research",
+            heading: "Research",
             description:
                 "A growing body of research, especially peer-reviewed publications, showcases the effectiveness of the ECHO Model of capacity building in India across multiple healthcare focus areas like Mental Health, Cancer, and Tuberculosis.",
             buttonText: "Explore more",
@@ -35,7 +35,7 @@ const Newsroom = () => {
         },
         {
             imageSrc: book,
-            heading : "Our Impact",
+            heading: "Our Impact",
             description:
                 "The ECHO Model has been used across India to support mentorship and training in healthcare, education and other social determinants of health.",
             buttonText: "Download",

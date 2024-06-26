@@ -83,9 +83,7 @@ const Banner = () => {
             }
             updateSliderValue();
         };
-
         const intervalId = setInterval(autoSlide, 2000);
-
         return () => clearInterval(intervalId);
     }, [currentIndexSlider]);
 

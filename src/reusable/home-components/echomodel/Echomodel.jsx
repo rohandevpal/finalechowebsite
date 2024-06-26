@@ -4,10 +4,6 @@ import './echomodel.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
-   
-
 const Echomodal = () => {
     useEffect(() => {
         AOS.init({

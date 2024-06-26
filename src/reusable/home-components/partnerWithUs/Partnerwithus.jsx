@@ -4,8 +4,6 @@ import "./partnerwithus.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-
-
 const PartnerItem = ({ imageSrc, title, description, buttonText }) => {
 
   useEffect(() => {
@@ -19,7 +17,6 @@ const PartnerItem = ({ imageSrc, title, description, buttonText }) => {
       anchorPlacement: 'top-bottom',
     });
   }, []);
-
 
   return (
     <div className="partner-section">

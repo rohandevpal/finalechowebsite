@@ -10,7 +10,6 @@ const Fundingpartner = () => {
         partnerfund4, 
         partnerfund5, 
         partnerfund12
-        
     ];
     const fundingPartnerSecond = [
         partnerfund6, 
@@ -19,9 +18,7 @@ const Fundingpartner = () => {
         partnerfund9,
         partnerfund10,
         partnerfund11
-
-    ]
-
+    ];
     return (
         <section className="funding-partners">
             <h2 className="funding-partners-heading text-center">Funding Partners</h2>

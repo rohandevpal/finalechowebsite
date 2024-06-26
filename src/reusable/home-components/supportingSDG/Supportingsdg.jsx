@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import sdgImages from './imports';
+import sdgImages from '../../../_data/homedata';
 import './supporting.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
